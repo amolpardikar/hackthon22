@@ -18,9 +18,8 @@ try{
     console.log("Error: "+error);
 }
 
-const studentrouter= require("./routes/students");
-app.use('/students',studentrouter)
-
+const customerRouter= require("./routes/customers");
+app.use('/customers',customerRouter)
 
 
 app.listen(port, () =>{
